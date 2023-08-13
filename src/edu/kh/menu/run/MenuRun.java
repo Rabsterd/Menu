@@ -8,7 +8,12 @@ public class MenuRun {
 		
 		MenuService MS = new MenuService();
 		
-		MS.
+		MS.program();
+		
+		
+		
+		
+		
 	
 		
 	}

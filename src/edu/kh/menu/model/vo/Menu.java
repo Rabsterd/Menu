@@ -41,7 +41,7 @@ public class Menu {
 
 	@Override
 	public String toString() {
-		return "메뉴명 : " + name + ", 가격 : " + prise + ", (원산지)" + PlaceOfOrigin;
+		return name + " 가격 : " + prise + " (원산지)" + PlaceOfOrigin;
 	}
 	
 	
