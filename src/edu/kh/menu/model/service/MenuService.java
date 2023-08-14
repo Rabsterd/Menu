@@ -107,6 +107,7 @@ public class MenuService {
 	
 	public String fixmenu() {
 		System.out.println("===== 메뉴 수정 =====");
+		System.out.println("수정할 메뉴를 선택하세요 : ");
 		int index = sc.nextInt();
 		
 		if(menu.isEmpty() ) {
@@ -121,8 +122,9 @@ public class MenuService {
 			
 			return "범위를 넘어선 값을 입력할 수 없습니다";
 		} else {
-			System.out.println("수정할 메뉴를 선택하세요");
+			
 			menu.set(index, null);
+			return "수정되었습니다";
 		}
 		
 	}
@@ -130,7 +132,7 @@ public class MenuService {
 	public String deletemenu() {
 		System.out.println("===== 메뉴 삭제 =====");
 		
-		System.out.print("번호 입력 : ");
+		System.out.print("삭제할 메뉴 입력 : ");
 		int index = sc.nextInt();
 		
 		if(menu.isEmpty() ) {
